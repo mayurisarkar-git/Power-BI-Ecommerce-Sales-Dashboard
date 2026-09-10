@@ -23,4 +23,4 @@ Analyze sales and profitability performance across regions, product categories, 
 
 ## Dashboard Preview
 
-![Sales Performance Dashboard]()  
+![Sales Performance Dashboard](dashboard.png)
