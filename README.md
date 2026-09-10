@@ -60,4 +60,40 @@ Analyze sales and profitability performance across regions, product categories, 
 - **Power Query:** Data cleaning and transformation
 - **Data Modeling:** Working with related sales and order tables
 - **Data Visualization:** Selecting appropriate visuals and presenting business insights
-- **Business Analysis:** Identifying revenue drivers, profitability patterns, and improvement opportunities  
+- **Business Analysis:** Identifying revenue drivers, profitability patterns, and improvement opportunities
+  
+## DAX Measures
+
+### Total Sales
+
+```DAX
+Total Sales =
+SUM(Details[Amount])
+```
+### Total Profit
+
+```DAX
+Total Profit =
+SUM(Details[Profit])
+```
+### Profit Margin
+```DAX
+Profit Margin =
+DIVIDE(
+    [Total Profit],
+    [Total Sales]
+)
+```
+### Average Order Value
+```DAX
+Average Order Value =
+DIVIDE(
+    SUM(Details[Amount]),
+    DISTINCTCOUNT(Orders[Order ID])
+)
+```
+### Total Orders
+```
+Total Orders =
+DISTINCTCOUNT(Details[Order ID])
+```
