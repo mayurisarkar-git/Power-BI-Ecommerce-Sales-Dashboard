@@ -93,7 +93,21 @@ DIVIDE(
 )
 ```
 ### Total Orders
-```
+```DAX
 Total Orders =
 DISTINCTCOUNT(Details[Order ID])
 ```
+## Dataset
+
+The analysis uses two related tables:
+
+- **Orders:** Order-level information including Order ID, Order Date, Customer, City, and State.
+- **Details:** Transaction-level information including Order ID, Amount, Profit, Quantity, Category, Sub-Category, and Payment Mode.
+
+The dataset contains **500 unique orders** and **1,500 transaction-detail records**.
+
+## Project Files
+
+- `dashboard.png` — Final Power BI dashboard preview
+- `Sales Dashboard.pbix` — Power BI report file
+- `README.md` — Project documentation
